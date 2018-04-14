@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="changeSys" class="title">
+			<div id="ones" class="current" data-sys="1">
+				canvas版本五子棋
+			</div>
+			<div id="twos" data-sys="2">
+				dom版本五子棋
+			</div>
+		</div>
+		<div id="canvasSys" class="systemCanvas" style="">
+			<canvas id="chess" width="450px" height="450px"></canvas>
+			<div class="button">
+				<div id="reStartCanvas">
+					重新开始
+				</div>
+				<div class="first" id='back'>
+					悔棋
+				</div>
+				<div class="second" id='justBack'>
+					撤销悔棋
+				</div>
+			</div>
+		</div>
+		<div class="systemDom" id="domSys" style="display: none;">
+			<div class="dom" id="domBang">
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="oneLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="lastLine">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="button">
+				<div id="reStartDom">
+					重新开始
+				</div>
+				<div class="first" id='backDom'>
+					悔棋
+				</div>
+				<div class="second" id='justBackDom'>
+					撤销悔棋
+				</div>
+			</div>	
+		</div>
+	</body>
+<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/canvas.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/dom.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	const chess = document.getElementById("chess") ;//获取canvas
+	const context = chess.getContext("2d");
+	
+	const id = 'domBang';
+	
+	const first = document.getElementById('back');
+	
+	const dom = document.getElementById('domBang');
+	const public = new Public(0,true);
+	//初始化画布
+	let canvasDom = new CanvasBang(context,public.creatArray(),[],[],true,0);
+	const img = new Image();
+	img.src = 'bg.jpg' ;
+	img.onload = function(){
+		canvasDom.initCanvas(img)
+	}
+	
+	//初始化dom
+	let domBang = new DomBang(id,public.creatArray(), [],[],true,0);
+	
+	//绑定canvas事件，来进行下棋
+	chess.addEventListener('click',function(e){
+		//落子,然后判断输赢
+		canvasDom.eventMeth(e);
+	})
+	//绑定canvas重新开始
+	let reStartCan = document.getElementById('reStartCanvas');
+	reStartCan.addEventListener('click',function(){
+		canvasDom = new CanvasBang(context,public.creatArray(),[],[],true,0);
+		canvasDom.initCanvas(img);
+	})
+	//绑定dom重新开始
+	let reStartDom = document.getElementById('reStartDom');
+	reStartDom.addEventListener('click',function(){
+		domBang = new DomBang(id,public.creatArray(), [],[],true,0);
+		domBang.initDom();
+	})
+	//绑定canvas版本的悔棋	
+	first.addEventListener('click',function(){
+		canvasDom.back(img);
+	})
+	//绑定canvas版本的撤销悔棋功能
+	let second = document.getElementById('justBack');
+	second.addEventListener('click',function(){
+		canvasDom.justback();
+	})
+	
+	
+	//绑定dom版本落子事件
+	dom.addEventListener('click',function(e){
+		domBang.eventDown(e);
+	})
+	//绑定dom版本悔棋事件
+	let firstDom = document.getElementById('backDom');
+	firstDom.addEventListener('click',function(){
+		domBang.backDom();
+	})
+	//绑定dom撤销悔棋功能
+	let secondDom = document.getElementById('justBackDom');
+	secondDom.addEventListener('click',function(){
+		domBang.justBackDom();
+	})
+	//绑定版本之间切换事件
+	let changeSys = document.getElementById('changeSys');
+	changeSys.addEventListener('click',function(e){
+		let target = e.target;
+		let tarArrubu = target.getAttribute('data-sys');
+		
+		if(tarArrubu == "1"){//canvas版本
+			target.classList.add('current');
+			changeSys.children[1].classList.remove('current');
+			document.getElementById('domSys').style.display = 'none';
+			document.getElementById('canvasSys').style.display = 'block';
+		}else{
+			target.classList.add('current');
+			changeSys.children[0].classList.remove('current');
+			document.getElementById('domSys').style.display = 'block';
+			document.getElementById('canvasSys').style.display = 'none';
+		}
+	})
+</script>
+</html>

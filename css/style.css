@@ -1,0 +1,91 @@
+	li{
+		list-style-type:none;
+	}
+	canvas {
+    	display: block;
+    	margin: 20px auto;
+    	
+	}
+	.button{
+		width: 350px;
+		height: 50px;
+		margin: 20px auto;		
+	}
+	.button div{
+		width: 100px;
+		height: 50px;
+		float: left;
+		line-height: 50px;
+		text-align: center;
+		border: 1px solid black;
+		border-radius: 10px;
+		margin-right: 10px;
+	}
+	.button div:hover{
+		color: red;
+	}
+	/***dom版样式****/
+	.dom{
+		width:421px;
+		height:430px;
+		margin:20px auto;
+		background:url(./bg.jpg);
+		padding:15px 15px;
+		position:relative;
+	}
+	.dom ul {
+		margin:0 0 ;
+		padding:0 0;
+		
+		height:30px;
+		border:1px solid black;
+		border-bottom:none;
+	}
+	.dom ul li{
+		width:29px;
+		height:30px;
+		float:left;
+		border-right:1px solid black;
+	}
+	.dom ul li:last-child{
+		border-right:none;
+	}
+	.dom .lastLine{
+		border-bottom:1px solid black;
+	}
+	.blackQi{
+		width:26px;
+		height:26px;
+		border-radius:13px;
+    	background: -webkit-radial-gradient(#DEDEDe -7%,#A9A9A9 0%,black 70%);
+    	position:absolute;
+    	
+	}
+	.whiteQi{
+		width:26px;
+		height:26px;
+		border-radius:13px;
+    	background: -webkit-radial-gradient(white 4%,white 0%,#dedede 55%);
+    	position:absolute;
+    	
+	}
+	/* 切换选择栏  */
+	.title {
+		width: 305px;
+		height: 60px;
+		margin: 10px auto;
+		
+		border-radius: 60px;
+	}
+	.title div {
+		width: 150px;
+		height: 60px;
+		float: left;
+		text-align: center;
+		line-height:60px ;
+		border-radius: 60px;
+		border: 1px solid salmon;
+	}
+	.current{
+		background-color: coral;
+	}

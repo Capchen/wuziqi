@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<titl</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div id="" class="systemCanvas">
+		<canvas id="chess" width="450px" height="450px"></canvas>
+		<div class="button">
+			<div class="first" id='back'>
+				悔棋
+			</div>
+			<div class="second" id='justBack'>
+				撤销悔棋
+			</div>
+		</div>
+	</div>
+	
+	<div class="systemDom">
+		<div class="dom" id="domBang">
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="oneLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="lastLine">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="button">
+			<div class="first" id='backDom'>
+				悔棋
+			</div>
+			<div class="second" id='justBackDom'>
+				撤销悔棋
+			</div>
+		</div>	
+	</div>
+</body>
+<script type="text/javascript">
+	var historyXY= creatArray();//canvas棋盘数据
+	var historyDomXY = creatArray();//dom棋盘数据
+
+	var count = 0;//用来记录悔棋次数，只能悔棋一次
+
+	var historyStep = []; //canvas版本用来记录下棋的步子堆栈，悔棋的时候需要操作
+	var historyDomStep = []; //dom版本用来记录下棋的步子堆栈，悔棋的时候需要操作
+
+	var cacheStep = [];//canvas用来保存被撤销的步子的堆栈，
+	var cacheDomStep = [];//dom用来保存被撤销的步子的堆栈，
+
+	var color = true;//true为黑子先下，false为白子先下
+
+
+	var chess = document.getElementById("chess") ;//获取canvas
+	var context = chess.getContext("2d");
+	//初始化棋盘;
+	initCanvas();
+	//绑定事件，来进行下棋
+	chess.addEventListener('click',function(e){
+		//获取点击鼠标的坐标
+		var x = e.offsetX ;
+	    var y = e.offsetY ;
+	    console.log(x+'|'+y)
+	    //计算横坐标和纵坐标。每个单元格是30px;
+	    var i = Math.floor(x/30) ;
+	    var j = Math.floor(y/30) ;
+
+	    if(historyXY[i][j] == 0){
+	    	//每当这个坐标下了棋之后，如果是黑旗将标识改为1，否则为2
+	    	if(color){
+	    		historyXY[i][j] = 1;
+	    	} else {
+	    		historyXY[i][j] = 2;	
+	    	}
+	    	//将当前点击的点，推入堆栈
+	    	historyStep.push([i,j]);
+	    	//画出棋子
+	    	oneStep(i,j,color);
+	    	//这里是为了改变黑白子的下棋顺序
+	    	color = !color ;
+	    	//重置悔棋统计
+	    	count = 0;
+	    }
+	    	  	    
+	})
+
+	var dom = document.getElementById('domBang');
+
+	dom.addEventListener('click',function(e){
+		console.log(e)
+		var x = e.layerX ;
+	    var y = e.layerY ;
+	    var i = Math.floor(x/30) ;
+	    var j = Math.floor(y/30) ;
+	    console.log(i+'|'+j)
+	    if(historyDomXY[i][j] == 0){
+	    	//每当这个坐标下了棋之后，如果是黑旗将标识改为1，否则为2
+	    	if(color){
+	    		historyDomXY[i][j] = 1;
+	    	} else {
+	    		historyDomXY[i][j] = 2;	
+	    	}
+	    	//将当前点击的点，推入堆栈
+	    	historyDomStep.push([i,j]);
+	    	//画出棋子
+	    	oneDomStep(i,j,color);
+	    	//这里是为了改变黑白子的下棋顺序
+	    	color = !color ;
+	    	//重置悔棋统计
+	    	count = 0;
+	    }
+	})
+	/**
+	*画出dom版棋子
+	*/
+	function oneDomStep(i,j,colorDom){
+		var className = '';
+		if(colorDom){
+			className = 'blackQi'
+		} else {
+			className = 'whiteQi'
+		}
+		var top = j*31+3;
+		var left = i*30+3;
+
+		var domHtml = '<div class="'+ className +'" style="top:'+ top +'px;left:'+ left +'px"></div>';
+		let divHt = document.createElement('div');
+		divHt.classList.add(className);
+		divHt.style.top = top + 'px';
+		divHt.style.left = left + 'px';
+		divHt.setAttribute("id",i+'_'+j)
+		var dom = document.getElementById('domBang');
+		dom.appendChild(divHt);
+
+		//下完之后校验
+		successWay(i,j,color,historyDomXY);
+	}
+
+
+	/*
+	初始化
+	*/
+	function initCanvas(){
+		//context.clearRect(0,0,450,450)
+		var img = new Image();
+		img.src = "./bg.jpg" ; 
+		img.onload = function (){
+	    	context.drawImage(img,0,0,450,450);	
+	    	drawAllLine();
+	    	for(var i =0;i<historyXY.length;i++){
+				for (var j = 0; j < historyXY[i].length; j++) {
+					//画棋子
+					var ff = historyXY[i][j];			
+					if(ff != 0){
+						var isColor = numToBool(ff);
+						oneStep(i,j,isColor);
+					}			
+				}
+			}
+		}	
+	}
+
+	/*
+	将1与true转换，将2与false转换，即区分黑白子
+	*/
+	function numToBool(flag){
+		var bool = null;
+		switch(flag)
+			{
+			case 1:
+			  bool = true;
+			  break;
+			case 2:
+			  bool = false;
+			  break;
+			default:
+			  break;
+			}
+		return bool;	
+	}
+	/*
+	将true与1转换，将false与2转换，即区分黑白子
+	*/
+	function boolToNum(flag){
+		var bool = null;
+		switch(flag)
+			{
+			case true:
+			  bool = 1;
+			  break;
+			case false:
+			  bool = 2;
+			  break;
+			default:
+			  break;
+			}
+		return bool;	
+	}
+
+	//绑定悔棋功能
+	var first = document.getElementById('back');
+	first.addEventListener('click',function(){
+		if(count == 1){
+			//说明已经悔棋了，不能再悔棋了
+			alert("只能悔棋一次哦");
+			return false;
+		}
+		//从历史堆栈中取出最近的一步坐标
+		var lastStep = historyStep.pop();//[i,j]
+		//将棋盘数据中的对应坐标的标记置为0
+		historyXY[lastStep[0]][lastStep[1]] = 0;
+		//将悔棋坐标放入悔棋堆栈中，让撤销悔棋使用
+		cacheStep.push(lastStep);
+		//保留原先的角色
+		color = !color;
+		count++ 
+		//初始化棋盘
+		initCanvas();
+	})
+
+		//绑定dom悔棋功能
+	var firstDom = document.getElementById('backDom');
+	firstDom.addEventListener('click',function(){
+		if(count == 1){
+			//说明已经悔棋了，不能再悔棋了
+			alert("只能悔棋一次哦");
+			return false;
+		}
+		//从历史堆栈中取出最近的一步坐标
+		var lastStep = historyDomStep.pop();//[i,j]
+		//将棋盘数据中的对应坐标的标记置为0
+		historyDomXY[lastStep[0]][lastStep[1]] = 0;
+		//将悔棋坐标放入悔棋堆栈中，让撤销悔棋使用
+		cacheDomStep.push(lastStep);
+		//保留原先的角色
+		color = !color;
+		count++ 
+		//删除指定节点
+		var father = document.getElementById('domBang');
+		var removeDom = document.getElementById(lastStep[0]+'_'+lastStep[1]);
+		father.removeChild(removeDom);
+
+	})
+
+	//绑定撤销悔棋功能
+	var second = document.getElementById('justBack');
+	second.addEventListener('click',function(){
+		//取出最近一次悔棋的坐标
+		var rePrint = cacheStep.pop();
+		//重新画
+		oneStep(rePrint[0],rePrint[1],color);
+		//撤销悔棋时也需要将悔棋状态重置
+		count = 0;
+		//并且要将最近一次悔棋的坐标放入历史堆栈中，不然下次悔棋的起点不一样
+		historyStep.push(rePrint);
+		//改变棋盘的数据
+		historyXY[rePrint[0]][rePrint[1]] = boolToNum(color);
+		//保留原先的角色
+		color = !color;
+	})
+	//绑定dom撤销悔棋功能
+	var secondDom = document.getElementById('justBackDom');
+	secondDom.addEventListener('click',function(){
+		//取出最近一次悔棋的坐标
+		var rePrint = cacheDomStep.pop();
+		//重新画
+		oneDomStep(rePrint[0],rePrint[1],color);
+		//撤销悔棋时也需要将悔棋状态重置
+		count = 0;
+		//并且要将最近一次悔棋的坐标放入历史堆栈中，不然下次悔棋的起点不一样
+		historyDomStep.push(rePrint);
+		//改变棋盘的数据
+		historyDomXY[rePrint[0]][rePrint[1]] = boolToNum(color);
+		//保留原先的角色
+		color = !color;
+	})
+
+	/**
+	*	画棋盘
+	*
+	**/
+	function drawAllLine(){
+		context.beginPath();
+		for (var i=0; i<15; i++) {
+		    context.moveTo(15,15+i*30);
+		    context.lineTo(435,15+i*30);
+		    context.stroke();
+		    context.moveTo(15+i*30,15);
+		    context.lineTo(15+i*30,435);
+		    context.stroke(); 
+		}
+	}
+	/**
+	*画棋子
+	*i 横坐标的值
+	*j 纵坐标的值
+	*color 黑子还是白子 true为黑
+	**/
+	function oneStep(i, j, color){
+    	context.beginPath() ;
+    	context.arc(15+i*30, 15+j*30, 13, 0, 2*Math.PI);
+    	context.closePath() ;
+    	//设置渐变
+    	var gradient = context.createRadialGradient(15+i*30+2, 15+j*30-2, 15, 15+i*30, 15+j*30, 0);
+    	if(color){
+       		gradient.addColorStop(0, "#0a0a0a");
+        	gradient.addColorStop(1, "#636766");
+    	}else{
+        	gradient.addColorStop(0, "#D1D1D1");
+        	gradient.addColorStop(1, "#F9F9F9");
+    	}
+    	context.fillStyle = gradient ;
+    	context.fill();
+    	//下完之后判断是否成功
+    	successWay(i,j,color,historyXY);
+	};
+	/**
+	*创建一个二维数组，来记录各个点的信息\
+	*因为棋盘为15X15,初始都为0
+	*/
+	function creatArray(){
+		var twoArray = [];
+		for (var i=0; i<15; i++) {
+		    twoArray[i] = [] ;
+		    for (var j=0; j<15; j++) {
+		        twoArray[i][j] = 0;
+		    }
+		}
+		return twoArray;
+	}
+	/**
+	*获胜的算法可以分为，
+	*横线5个 —— 纵坐标连着的5个都为i，且棋子标识都一样 如[1,0],[2,0]，[3,0]，[4,0]，[5,0]
+	*竖线5个 |  ...
+	*左斜线5个 / 为坐标递增1，标识一样
+	*右斜线5个 \
+	*/
+	function successWay(i,j,color,dataArray){
+		
+		//黑旗将标识为1，白棋为2
+		var flag = 0;
+		if(color){
+			flag = 1
+		} else {
+			flag = 2
+		}
+		//四种方式都验证是否成功
+		if(oneWay(i,j,flag,dataArray) ||twoWay(i,j,flag,dataArray) ||threeWay(i,j,flag,dataArray) ||fourWay(i,j,flag,dataArray))
+		{
+
+			alert(flag==1?'黑棋胜':'白棋胜')
+		}
+		
+		
+	}
+	/**
+	*横向判断
+	**/
+	function oneWay(i,j,flag,dataArray){
+		var left = true;
+		var right = true;
+		for(var k=1; k<5; k++){
+			if((i-k < 0) || dataArray[i-k][j] !== flag){
+				left = false;
+				break;
+			}
+		}
+		for(var s=1; s<5; s++){
+			if((i+s > 15) || dataArray[i+s][j] !== flag){
+				right = false;
+				break;
+			}
+		}
+		return (left||right);
+	};
+	/**
+	*纵向判断
+	**/
+	function twoWay(i,j,flag,dataArray){
+		var top = true;
+		var bottom = true;
+		for(var k=1; k<5; k++){
+			if((j-k < 0) || dataArray[i][j-k] !== flag){
+				top = false;
+				break;
+			}
+		}
+		for(var s=1; s<5; s++){
+			if((j+s > 15) || dataArray[i][j+s] !== flag){
+				bottom = false;
+				break;
+			}
+		}
+		return (top||bottom);
+	};
+	/**
+	*撇向判断
+	**/
+	function threeWay(i,j,flag,dataArray){
+		var top = true;
+		var bottom = true;
+		for(var k=1; k<5; k++){
+			if((i+k > 15) || dataArray[i+k][j-k] !== flag){
+				top = false;
+				break;
+			}
+		}
+		for(var s=1; s<5; s++){
+			if((i-s < 0) || dataArray[i-s][j+s] !== flag){
+				bottom = false;
+				break;
+			}
+		}
+		return (top||bottom);
+	};
+	/**
+	*捺向判断
+	**/
+	function fourWay(i,j,flag,dataArray){
+		var top = true;
+		var bottom = true;
+		for(var k=1; k<5; k++){
+			if((i-k < 0) || dataArray[i-k][j-k] !== flag){
+				top = false;
+				break;
+			}
+		}
+		for(var s=1; s<5; s++){
+			if((i+s > 15) || dataArray[i+s][j+s] !== flag){
+				bottom = false;
+				break;
+			}
+		}
+		return (top||bottom);
+	};
+
+</script>
+</html>
