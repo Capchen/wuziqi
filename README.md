@@ -5,6 +5,6 @@
 * 重新开始
 ## 不支持
 * 人机对战
-#备注
+## 备注
 * index.html是引用了js和css
 * old_index是将所有的css和js放在了这个页面
