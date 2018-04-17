@@ -32,8 +32,8 @@ class DomBang {
 		} else {
 			className = 'whiteQi'
 		}
-		var top = j*31+3;
-		var left = i*30+3;
+		var top = j*30+2;
+		var left = i*30+2;
 
 		var domHtml = '<div class="'+ className +'" style="top:'+ top +'px;left:'+ left +'px"></div>';
 		let divHt = document.createElement('div');
@@ -56,7 +56,6 @@ class DomBang {
 	    var y = e.layerY ;
 	    var i = Math.floor(x/30) ;
 	    var j = Math.floor(y/30) ;
-	    console.log(this.historyDomXY[i][j]);
 	    if(this.historyDomXY[i][j] == 0){
 	    	//每当这个坐标下了棋之后，如果是黑旗将标识改为1，否则为2
 	    	if(this.color){
@@ -171,7 +170,7 @@ class DomBang {
 			}
 		}
 		for(let s=1; s<5; s++){
-			if((i+s > 15) || dataArray[i+s][j] !== flag){
+			if((i+s > 14) || dataArray[i+s][j] !== flag){
 				right = false;
 				break;
 			}
@@ -191,7 +190,7 @@ class DomBang {
 			}
 		}
 		for(let s=1; s<5; s++){
-			if((j+s > 15) || dataArray[i][j+s] !== flag){
+			if((j+s > 14) || dataArray[i][j+s] !== flag){
 				bottom = false;
 				break;
 			}
@@ -205,7 +204,7 @@ class DomBang {
 		let top = true;
 		let bottom = true;
 		for(let k=1; k<5; k++){
-			if((i+k > 15) || dataArray[i+k][j-k] !== flag){
+			if((i+k > 14) || dataArray[i+k][j-k] !== flag){
 				top = false;
 				break;
 			}
@@ -231,7 +230,7 @@ class DomBang {
 			}
 		}
 		for(let s=1; s<5; s++){
-			if((i+s > 15) || dataArray[i+s][j+s] !== flag){
+			if((i+s > 14) || dataArray[i+s][j+s] !== flag){
 				bottom = false;
 				break;
 			}

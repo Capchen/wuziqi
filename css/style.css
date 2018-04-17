@@ -26,32 +26,35 @@
 	}
 	/***dom版样式****/
 	.dom{
-		width:421px;
-		height:430px;
+		width:420px;
+		height:420px;
 		margin:20px auto;
-		background:url(./bg.jpg);
+		background:url(./bg.jpg) no-repeat;
+		background-size: 450px 450px;
+		background-position: center;
 		padding:15px 15px;
 		position:relative;
 	}
 	.dom ul {
 		margin:0 0 ;
 		padding:0 0;
-		
-		height:30px;
-		border:1px solid black;
+		width: 418px;
+		height:27.85px;
+		border:2px solid black;
 		border-bottom:none;
+		border-right: none;
 	}
 	.dom ul li{
-		width:29px;
-		height:30px;
+		width:27.85px;
+		height:27.85px;
 		float:left;
-		border-right:1px solid black;
+		border-right:2px solid black;
 	}
-	.dom ul li:last-child{
+	/*.dom ul li:last-child{
 		border-right:none;
-	}
+	}*/
 	.dom .lastLine{
-		border-bottom:1px solid black;
+		border-bottom:2px solid black;
 	}
 	.blackQi{
 		width:26px;

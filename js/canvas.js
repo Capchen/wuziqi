@@ -221,7 +221,7 @@ class CanvasBang {
 			}
 		}
 		for(let s=1; s<5; s++){
-			if((i+s > 15) || dataArray[i+s][j] !== flag){
+			if((i+s > 14) || dataArray[i+s][j] !== flag){
 				right = false;
 				break;
 			}
@@ -241,7 +241,7 @@ class CanvasBang {
 			}
 		}
 		for(let s=1; s<5; s++){
-			if((j+s > 15) || dataArray[i][j+s] !== flag){
+			if((j+s > 14) || dataArray[i][j+s] !== flag){
 				bottom = false;
 				break;
 			}
@@ -255,7 +255,7 @@ class CanvasBang {
 		let top = true;
 		let bottom = true;
 		for(let k=1; k<5; k++){
-			if((i+k > 15) || dataArray[i+k][j-k] !== flag){
+			if((i+k > 14) || dataArray[i+k][j-k] !== flag){
 				top = false;
 				break;
 			}
@@ -281,7 +281,7 @@ class CanvasBang {
 			}
 		}
 		for(let s=1; s<5; s++){
-			if((i+s > 15) || dataArray[i+s][j+s] !== flag){
+			if((i+s > 14) || dataArray[i+s][j+s] !== flag){
 				bottom = false;
 				break;
 			}
